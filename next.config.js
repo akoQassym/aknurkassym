@@ -6,6 +6,7 @@ const withNextra = require("nextra")({
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  transpilePackages: ["geist"],
   // any configs you need
 };
 
