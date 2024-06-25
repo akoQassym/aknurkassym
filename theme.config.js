@@ -17,4 +17,5 @@ export default {
       `}</style>
     </footer>
   ),
+  darkMode: false,
 };
