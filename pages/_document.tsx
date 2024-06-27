@@ -1,4 +1,5 @@
 import { Html, Head, Main, NextScript } from "next/document";
+import { Analytics } from "@vercel/analytics/react"
 
 export default function Document() {
   const meta = {
@@ -8,7 +9,7 @@ export default function Document() {
   };
 
   return (
-    <Html lang="en" className="dark">
+    <Html lang="en">
       <Head>
         <meta name="robots" content="follow, index" />
         <meta name="description" content={meta.description} />
@@ -20,6 +21,7 @@ export default function Document() {
       <body>
         <Main />
         <NextScript />
+        <Analytics />
       </body>
     </Html>
   );
