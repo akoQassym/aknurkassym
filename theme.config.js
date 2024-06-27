@@ -18,6 +18,8 @@ export default {
     </footer>
   ),
   nextThemes: {
-    defaultTheme: 'dark'
+    defaultTheme: 'dark',
+    enableSystem: false,
+    themes: ['dark']
   },
 };
