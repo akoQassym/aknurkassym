@@ -80,3 +80,9 @@ img.next-image {
     height: 180px !important;
   }
 }
+
+@media (prefers-color-scheme: light) {
+  html {
+    color-scheme: light;
+  }
+}
