@@ -48,6 +48,14 @@ h2 {
   }
 }
 
+.dark {
+  background-color: #000000;
+}
+
+.light {
+  background-color: #e9ecef;
+}
+
 details summary {
   cursor: pointer;
 }
