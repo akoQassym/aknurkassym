@@ -24,6 +24,16 @@ export default function Document() {
         <NextScript />
         <Analytics />
         <SpeedInsights />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function() {
+                document.documentElement.classList.add('dark');
+                document.documentElement.style.colorScheme = 'dark';
+              })();
+            `,
+          }}
+        />
       </body>
     </Html>
   );
