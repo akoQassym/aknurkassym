@@ -17,9 +17,8 @@ export default {
       `}</style>
     </footer>
   ),
-  nextThemes: {
+  darkMode: true,
+  nextTheme: {
     defaultTheme: 'dark',
-    enableSystem: false,
-    themes: ['dark']
-  },
+  }
 };
