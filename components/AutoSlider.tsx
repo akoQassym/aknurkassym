@@ -6,17 +6,18 @@ import 'slick-carousel/slick/slick-theme.css';
 interface AutoSliderProps {
   slidesToShow: number;
   autoplay: boolean;
+  autoplaySpeed: number;
   children: ReactNode;
 }
 
-const AutoSlider: React.FC<AutoSliderProps> = ({ slidesToShow = 1, autoplay = false, children }) => {
+const AutoSlider: React.FC<AutoSliderProps> = ({ slidesToShow = 1, autoplay = false, autoplaySpeed = 2000, children }) => {
   const settings = {
     dots: true,
     infinite: true,
     slidesToShow: slidesToShow,
     slidesToScroll: 1,
     autoplay: autoplay,
-    autoplaySpeed: 2000,
+    autoplaySpeed: autoplaySpeed,
     pauseOnHover: true,
   };
 
